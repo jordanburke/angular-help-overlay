@@ -1,0 +1,29 @@
+{
+	"name": "angular-help-overlay",
+	"description": "Angular Wrapper for chardin.js instruction overlay",
+	"version": "0.1.0",
+	"homepage": "https://github.com/jordanburke/angular-help-overlay",
+	"author": {
+		"name": "Jordan Burke",
+		"url": "https://github.com/jordanburke/"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/jordanburke/angular-help-overlay.git"
+	},
+	"licenses": [
+		{
+			"type": "MIT"
+		}
+	],
+	"dependencies": {},
+	"devDependencies": {
+		"grunt": "~0.4.1",
+		"grunt-cli": "~0.1.7",
+		"grunt-contrib-jshint": "latest",
+		"grunt-contrib-uglify": "~0.2.0",
+		"grunt-contrib-concat": "~0.2.0",
+		"grunt-contrib-watch": "latest",
+		"grunt-contrib-connect": "~0.5.0"
+	}
+}

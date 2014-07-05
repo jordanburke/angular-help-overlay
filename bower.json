@@ -1,0 +1,20 @@
+{
+	"name": "angular-help-overlay",
+	"version": "0.1.0",
+	"homepage": "https://github.com/jordanburke/angular-help-overlay",
+	"authors": [
+		"Jordan Burke <@jordanburke>"
+	],
+	"main": "lib/angular-help-overlay.js",
+	"description": "Directive for chardin.js instruction overlay",
+	"keywords": [
+	],
+	"license": "MIT",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	]
+}
