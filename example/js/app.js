@@ -1,7 +1,19 @@
-angular.module('app', ['angular-help-overlay']).controller('MainCtrl', function ($scope) {
+angular.module('app', ['angularHelpOverlay']).controller('MainCtrl', function ($scope) {
+  $scope.showHelp = false;
 
-  $scope.hello = function() {
-    var picture = $('.jumbotron img');
+  $scope.onStart = function(event) {
+    console.log('STARTING');
+    return '1';
+  };
+
+  $scope.onStop = function(event) {
+    console.log('ENDING');
+    return '0';
+  };
+
+  $scope.toggleHelp = function() {
+    $scope.showHelp = !$scope.showHelp;
+    /*var picture = $('.jumbotron img');
     if (picture.is(':visible')) {
       return ($('body').data('chardinJs')).toggle();
     } else {
@@ -10,7 +22,7 @@ angular.module('app', ['angular-help-overlay']).controller('MainCtrl', function 
       }, 600, function() {
         return ($('body').data('chardinJs')).toggle();
       });
-    }
+    }*/
   };
 
 });
