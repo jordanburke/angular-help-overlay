@@ -24,16 +24,16 @@
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
   </head>
 
-  <body ng-controller="MainCtrl" >
-    <div class="container" help-overlay="showHelp" help-start="onStart(event)" help-end="onStop(event)">
+  <body ng-controller="MainCtrl" help-overlay="showHelp" overlay-start-callback="onStart(event)" overlay-stop-callback="onStop(event)">
+    <div class="container" >
       <div class="jumbotron">
-        <button ng-click="toggleHelp()">FOOOOOO</button>
         <h1 data-intro="Project title" data-position="right">Chardin.js</h1>
         <p class="lead">
           Simple overlay instructions for your apps.
         </p>
         <img src="img/chardin.png" data-intro="An awesome 18th-century painter, who found beauty in everyday, common things." data-position="right" />
-        <a href="#" class="btn btn-large primary" data-toggle="chardinjs" data-intro="This button toggles the overlay, you can click it, even when the overlay is visible" data-position="left">See it in action</a>
+        <a href="#" class="btn btn-large primary" data-toggle="chardinjs" data-intro="This button toggles the overlay, you can click it, even when the overlay is visible"
+           data-position="left" ng-click="toggleHelp()">See it in action</a>
         <a href="" id="opentour" class="hide" data-toggle="chardinjs">Or open it again</a>
         <div class="credits">
           <p data-intro="Author of this plugin, aka Pablo Fernandez" data-position="right">
