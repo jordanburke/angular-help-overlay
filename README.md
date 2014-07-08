@@ -3,25 +3,34 @@ angular-help-overlay
 
 Angular Wrapper for [chardin.js](https://github.com/heelhook/chardin.js "Chardin.js") instruction overlay which was inspired by the "new" Gmail composer tour.
 
-Usage is straightforward:
-
-Find the dom element where you want to the overlay to appear (e.g., body, div, etc.) and add this tag to the element:
+Include the angular-help-overlay js file (min or source), chardin.js, and chardin.css. Then install the module to your app:
 
 ```
+angular.module('YourApp', ['angulartics', 'angularHelpOverlay'])
+        ...
+});
+```
+
+Usage is straightforward: Find the dom element where you want to the overlay to appear (e.g., body, div, etc.) and add this tag to the element:
+
+```HTML
 <body help-overlay="showHelp">...</body>
 ```
 
 With showHelp being a scoped boolean property. Setting that property to true will enable the overlay. Since this is just
 an AngularJS wrapper around a jquery plugin, this directive still uses chardin.js native attribute lookups:
 
+```HTML
+<div data-intro="Some Help description here" data-position="top">...</div>
 ```
-<div data-intro="Some Help description here">...</div>
-```
+
+`data-intro`: Text to show with the instructions  
+`data-position`: (`left`, `top`, `right`, `bottom`), where to place the text with respect to the element
 
 Additionally this directive provides delegation of chardin.js start and stop events via, help-overlay-start and
 help-overlay-stop:
 
-```
+```HTML
 <body help-overlay="showHelp" help-overlay-start="startFn(event)" help-overlay-stop="stopFn(event)">...</body>
 ```
 
