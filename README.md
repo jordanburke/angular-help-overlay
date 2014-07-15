@@ -3,7 +3,9 @@ angular-help-overlay
 
 Angular Wrapper for [chardin.js](https://github.com/heelhook/chardin.js "Chardin.js") instruction overlay which was inspired by the "new" Gmail composer tour.
 
-Include the angular-help-overlay js file (min or source), chardin.js, and chardin.css. Then install the module to your app:
+Include the angular-help-overlay js file (min or source), chardin.js, and chardin.css. If you are using grunt and using a bowerInstall task, you probably will still need to manually include chardin.js and chardin.css yourself, however the angular-help-overlay should be injected just fine.
+
+Next, install the module to your app:
 
 ```
 angular.module('YourApp', ['angulartics', 'angularHelpOverlay'])
