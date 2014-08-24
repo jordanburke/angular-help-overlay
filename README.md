@@ -37,6 +37,6 @@ help-overlay-stop:
 
 events being passed are the original chardin.js event objects.
 
-Note: The chardin.js attributes will not work on elements that get replaced at compile time, particularly those that are angular directives with replace:true. The workaround for this is to enclose the directive with a simple html wrapper element (e.g., <span> or a <div>) with the chardin.js attributes on it.
+Note: The chardin.js attributes will not work on elements that get replaced at compile time, particularly those that are angular directives with replace:true. The workaround for this is to enclose the directive with a simple html wrapper element (e.g., ```HTML <span> or a <div>```) with the chardin.js attributes on it.
 
 The example folder contains a modified example of the original chardin.js (i.e., minus the image animate).
