@@ -1,12 +1,14 @@
 angular-help-overlay
 ====================
 
-Angular Wrapper for [chardin.js](https://github.com/heelhook/chardin.js "Chardin.js") instruction overlay which was inspired by the "new" Gmail composer tour.
+Angular Wrapper for [chardin.js](https://github.com/heelhook/chardin.js "Chardin.js") instruction overlay which was inspired by the Gmail composer tour at the time.
 
-Include the angular-help-overlay js file (min or source), chardin.js, and chardin.css. Then install the module to your app:
+Include the angular-help-overlay js file (min or source), chardin.js, and chardin.css. If you are using grunt and using a bowerInstall task, you probably will still need to manually include chardin.js and chardin.css yourself, however the angular-help-overlay should be injected just fine.
+
+Next, install the module to your app:
 
 ```
-angular.module('YourApp', ['angulartics', 'angularHelpOverlay'])
+angular.module('YourApp', ['angularHelpOverlay'])
         ...
 });
 ```
@@ -16,7 +18,6 @@ Usage is straightforward: Find the dom element where you want to the overlay to 
 ```HTML
 <body help-overlay="showHelp">...</body>
 ```
-
 With showHelp being a scoped boolean property. Setting that property to true will enable the overlay. Since this is just
 an AngularJS wrapper around a jquery plugin, this directive still uses chardin.js native attribute lookups:
 
@@ -35,5 +36,7 @@ help-overlay-stop:
 ```
 
 events being passed are the original chardin.js event objects.
+
+Note: The chardin.js attributes will not work on elements that get replaced at compile time, particularly those that are angular directives with replace:true. The workaround for this is to enclose the directive with a simple html wrapper element (e.g., ``` <span> or a <div>```) with the chardin.js attributes on it.
 
 The example folder contains a modified example of the original chardin.js (i.e., minus the image animate).
