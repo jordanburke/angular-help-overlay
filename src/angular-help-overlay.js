@@ -42,9 +42,9 @@ angular.module('angularHelpOverlay', []).directive('helpOverlay', ['$document', 
           if (noop === true) {
             noop = false;
           } else if (newValue === true) {
-            element.chardinJs('start');
+            $(element).chardinJs('start');
           } else if (newValue === false) {
-            element.chardinJs('stop');
+            $(element).chardinJs('stop');
           }
         }
       });
