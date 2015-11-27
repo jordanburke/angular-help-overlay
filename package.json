@@ -1,7 +1,7 @@
 {
   "name": "angular-help-overlay",
   "description": "Angular Wrapper for chardin.js instruction overlay",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "homepage": "https://github.com/jordanburke/angular-help-overlay",
   "author": {
     "name": "Jordan Burke",
