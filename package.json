@@ -16,7 +16,9 @@
       "type": "MIT"
     }
   ],
-  "dependencies": {},
+  "dependencies": {
+    "chardin.js": "^0.1.3"
+  },
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-cli": "~0.1.7",
