@@ -28,11 +28,11 @@ an AngularJS wrapper around a jquery plugin, this directive still uses chardin.j
 `data-intro`: Text to show with the instructions  
 `data-position`: (`left`, `top`, `right`, `bottom`), where to place the text with respect to the element
 
-Additionally this directive provides delegation of chardin.js start and stop events via, help-overlay-start and
-help-overlay-stop:
+Additionally this directive provides delegation of chardin.js start and stop events via, overlay-start-callback and
+overlay-stop-callback:
 
 ```HTML
-<body help-overlay="showHelp" help-overlay-start="startFn(event)" help-overlay-stop="stopFn(event)">...</body>
+<body help-overlay="showHelp" overlay-start-callback="startFn(event)" overlay-stop-callback="stopFn(event)">...</body>
 ```
 
 events being passed are the original chardin.js event objects.
