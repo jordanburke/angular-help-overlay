@@ -1,6 +1,21 @@
 angular-help-overlay
 ====================
 
+> **⚠️ ARCHIVED PROJECT - NO LONGER MAINTAINED**
+>
+> This project is archived and no longer maintained. Both AngularJS (reached End of Life on December 31, 2021) and the underlying chardin.js library are no longer supported.
+>
+> **For Modern Alternatives, Consider:**
+> - [intro.js](https://introjs.com/) - Feature-rich library with active maintenance
+> - [driver.js](https://driverjs.com/) - Lightweight, no dependencies
+> - [shepherd.js](https://shepherdjs.dev/) - Highly customizable, framework-agnostic
+>
+> This repository remains available for historical reference and existing users.
+
+---
+
+## Original Documentation
+
 Angular Wrapper for [chardin.js](https://github.com/heelhook/chardin.js "Chardin.js") instruction overlay which was inspired by the Gmail composer tour at the time.
 
 Include the angular-help-overlay js file (min or source), chardin.js, and chardin.css. If you are using grunt and using a bowerInstall task, you probably will still need to manually include chardin.js and chardin.css yourself, however the angular-help-overlay should be injected just fine.

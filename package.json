@@ -1,7 +1,8 @@
 {
   "name": "angular-help-overlay",
-  "description": "Angular Wrapper for chardin.js instruction overlay",
-  "version": "0.1.3",
+  "description": "[ARCHIVED] Angular Wrapper for chardin.js instruction overlay - No longer maintained (AngularJS EOL Dec 2021)",
+  "version": "0.1.4",
+  "deprecated": "This package is no longer maintained. AngularJS reached End of Life on December 31, 2021. Consider modern alternatives: intro.js, driver.js, or shepherd.js",
   "homepage": "https://github.com/jordanburke/angular-help-overlay",
   "author": {
     "name": "Jordan Burke",
